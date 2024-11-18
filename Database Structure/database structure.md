@@ -1,4 +1,5 @@
 #### File structure for our application
+
 ```bash
 /app                         # Project root directory
   ├── models/                # Directory for model files
@@ -22,11 +23,11 @@
   └── README.md                    # Project documentation
 ```
 
-
-#### Example of ```history.json```
+#### Example of ``history.json``
 
 ```json
-  {
+[  
+{
     "id": 1,
     "timestamp": "2024-11-16T10:00:00Z",
     "classification_result": {"type1": 0.8, "type2": 0.15, "type3": 0.05},
@@ -42,11 +43,13 @@
   }
 ]
 ```
+
 #### Explanation of File Structure and Purpose
 
 ---
 
 ##### **1. `/app` (Project Root Directory)**
+
 - **Purpose**: This is the main directory of your application, containing all essential subdirectories and files.
 - **Contains**:
   - Subdirectories like `/models/`, `/data/`, `/config/`, `/utils/`.
@@ -55,6 +58,7 @@
 ---
 
 ##### **2. `/models/` (Model Files Directory)**
+
 - **Purpose**:
   - Stores trained machine learning or deep learning models.
   - Allows versioning of models to support updates and testing of different versions.
@@ -65,6 +69,7 @@
 ---
 
 ##### **3. `/data/` (Data Storage Directory)**
+
 - **Purpose**:
   - Stores application data such as classification history or logs (if needed).
   - Ensures historical records are saved and accessible for debugging or analysis.
@@ -74,6 +79,7 @@
 ---
 
 ##### **4. `/config/` (Configuration Directory)**
+
 - **Purpose**:
   - Stores configuration files for the application, defining global settings.
   - Centralizes settings for easy modification without hardcoding them in the main application logic.
@@ -86,12 +92,14 @@
       "log_level": "INFO"
     }
     ```
+
     - Tracks the current model version.
     - Defines image preprocessing parameters, such as target size.
 
 ---
 
 ##### **5. `/utils/` (Utility Functions Directory)**
+
 - **Purpose**:
   - Contains helper scripts and modular code to streamline the main application logic.
 - **Contents**:
@@ -108,6 +116,7 @@
 ---
 
 ##### **6. `main.py` (Application Entry Point)**
+
 - **Purpose**:
   - The starting point of the application where the main logic is implemented.
   - Orchestrates interactions between the utilities (`/utils/`), model (`/models/`), and configuration (`/config/`).
@@ -118,6 +127,7 @@
 ---
 
 ##### **7. `requirements.txt` (Dependency List)**
+
 - **Purpose**:
   - Lists all Python libraries and dependencies required to run the application.
 - **Contents**:
@@ -132,6 +142,7 @@
 ---
 
 ##### **8. `README.md` (Project Documentation)**
+
 - **Purpose**:
   - Provides an overview of the application, including its purpose, setup instructions, and usage examples.
 - **Contents**:
@@ -143,15 +154,12 @@
 
 #### Summary of Each Directory’s Role
 
-| **Directory/File**  | **Purpose**                                                                 |
-|----------------------|-----------------------------------------------------------------------------|
-| `/models/`           | Stores trained models and supports version control.                       |
-| `/data/`             | Holds application data like classification history (`history.json`).      |
-| `/config/`           | Stores configuration files to centralize and manage application settings. |
-| `/utils/`            | Contains modular utility scripts for model management, history, and image processing. |
-| `main.py`            | Entry point for the application, orchestrating all functionality.         |
-| `requirements.txt`   | Lists required Python libraries for the application.                      |
-| `README.md`          | Documents the project, setup steps, and usage instructions.               |
-
-
-
+| **Directory/File** | **Purpose**                                                                     |
+| ------------------------ | ------------------------------------------------------------------------------------- |
+| `/models/`             | Stores trained models and supports version control.                                   |
+| `/data/`               | Holds application data like classification history (`history.json`).                |
+| `/config/`             | Stores configuration files to centralize and manage application settings.             |
+| `/utils/`              | Contains modular utility scripts for model management, history, and image processing. |
+| `main.py`              | Entry point for the application, orchestrating all functionality.                     |
+| `requirements.txt`     | Lists required Python libraries for the application.                                  |
+| `README.md`            | Documents the project, setup steps, and usage instructions.                           |
