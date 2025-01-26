@@ -4,7 +4,7 @@ This project focuses on developing a machine learning model to classify skin can
 
 ### Team Members
 - Rabib Ayan​
-- Jerri Li​
+- Jerry Li​
 - Xu Mengyang​
 - Mark O’Donnell​
 - Ashifur Rahman​
